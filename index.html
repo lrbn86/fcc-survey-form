@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FCC - Survey Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description"></p>
+    </header>
+    <main>
+        <form action="#" id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" id="name" placeholder="enter name" required>
+            <label for="email" id="email-label">Email:</label>
+            <input type="text" name="email" id="email" placeholder="enter email" required>
+            <label for="number" id="number-label">Favorite number between 1 and 100:</label>
+            <input type="number" name="number" id="number" min="1" max="100" placeholder="1">
+            
+            <label for="dropdown">Education level:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="high school">High School</option>
+                <option value="associates degree">Associate's Degree (2 years)</option>
+                <option value="bachelors degree">Bachelor's Degree (4 years)</option>
+                <option value="doctoral degree">Doctoral Degree (Graduate Degree)</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="radio">Favorite shape: </label>
+            <input type="radio" name="radio" id="square">
+            <label for="square">Square</label>
+            <input type="radio" name="radio" id="triangle">
+            <label for="triangle">Triangle</label>
+            <input type="radio" name="radio" id="circle">
+            <label for="circle">Circle</label>
+
+            <label for="music">Favorite music:</label>
+            <input type="checkbox" name="classical" id="classical" value="classical">
+            <label for="classical">Classical</label>
+            <input type="checkbox" name="jazz" id="jazz" value="jazz">
+            <label for="jazz">Jazz</label>
+            <input type="checkbox" name="post-rock" id="post-rock" value="post-rock">
+            <label for="post-rock">Post-rock</label>
+            <input type="checkbox" name="jazz-fusion" id="jazz-fusion" value="jazz-fusion">
+            <label for="jazz-fusion">Jazz Fusion</label>
+            <input type="checkbox" name="hard-rock" id="hard-rock" value="hard-rock">
+            <label for="hard-rock">Hard Rock</label>
+            <input type="checkbox" name="electronic" id="electronic" value="electronic">
+            <label for="electronic">Electronic</label>
+
+            <label for="comments"></label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Additional comments..."></textarea>
+
+            <input type="button" value="Submit" id="submit">
+        </form>
+    </main>
 </body>
 </html>
